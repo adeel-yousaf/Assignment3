@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Enter Your Name"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:text="Adeel Yousaf"
+        android:textColorHint="#03A9F4" />
+<CheckBox
+    android:id="@+id/m"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Value 1"
+    />
+    <CheckBox
+        android:id="@+id/fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Value 2"
+        />
+
+    <Button
+        android:id="@+id/tName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#03A9F4"
+        android:text="Toast Name"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/tPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#03A9F4"
+        android:onClick="GetVal"
+        android:text="Toast Checkbox"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#2196F3"
+        android:src="@drawable/ic_android_black_24dp" />
+
+    <ToggleButton
+        android:id="@+id/tBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#03A9F4"
+        android:checked="true"
+        android:text="Toogle Button" />
+</LinearLayout>
